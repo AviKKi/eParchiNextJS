@@ -1323,6 +1323,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
+/***/ "./main.css":
+/*!******************!*\
+  !*** ./main.css ***!
+  \******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -1400,17 +1411,6 @@ function _extends() {
 
 /***/ }),
 
-/***/ "./node_modules/antd/lib/form/style/css.js":
-/*!*************************************************!*\
-  !*** ./node_modules/antd/lib/form/style/css.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./node_modules/antd/lib/layout/style/css.js":
 /*!***************************************************!*\
   !*** ./node_modules/antd/lib/layout/style/css.js ***!
@@ -1437,17 +1437,6 @@ function _extends() {
 /*!************************************************!*\
   !*** ./node_modules/antd/lib/row/style/css.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/antd/lib/select/style/css.js":
-/*!***************************************************!*\
-  !*** ./node_modules/antd/lib/select/style/css.js ***!
-  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1486,38 +1475,27 @@ function _extends() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/select/style/css */ "./node_modules/antd/lib/select/style/css.js");
-/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/select */ "antd/lib/select");
-/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var antd_lib_form_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd/lib/form/style/css */ "./node_modules/antd/lib/form/style/css.js");
-/* harmony import */ var antd_lib_form_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_form_style_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var antd_lib_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/form */ "antd/lib/form");
-/* harmony import */ var antd_lib_form__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_form__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components */ "./components/index.js");
-
-
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components */ "./components/index.js");
+/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../main.css */ "./main.css");
+/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/home/eswaraiah/Desktop/Books/eParchi/Dashboard/pages/index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const FormItem = antd_lib_form__WEBPACK_IMPORTED_MODULE_3___default.a.Item;
-const Option = antd_lib_select__WEBPACK_IMPORTED_MODULE_1___default.a.Option;
+
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
   className: "App",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 5
   },
   __self: undefined
-}, __jsx(_components__WEBPACK_IMPORTED_MODULE_5__["default"], {
+}, __jsx(_components__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 6
   },
   __self: undefined
 })));
@@ -1558,17 +1536,6 @@ module.exports = require("antd/lib/col");
 
 /***/ }),
 
-/***/ "antd/lib/form":
-/*!********************************!*\
-  !*** external "antd/lib/form" ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("antd/lib/form");
-
-/***/ }),
-
 /***/ "antd/lib/layout":
 /*!**********************************!*\
   !*** external "antd/lib/layout" ***!
@@ -1599,17 +1566,6 @@ module.exports = require("antd/lib/menu");
 /***/ (function(module, exports) {
 
 module.exports = require("antd/lib/row");
-
-/***/ }),
-
-/***/ "antd/lib/select":
-/*!**********************************!*\
-  !*** external "antd/lib/select" ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("antd/lib/select");
 
 /***/ }),
 
