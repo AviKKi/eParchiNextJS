@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nvar CcmSummary = function CcmSummary() {\n  return __jsx(\"div\", null, \"CcmSummary\");\n};\n\nexport default CcmSummary;","map":null,"metadata":{},"sourceType":"module"}

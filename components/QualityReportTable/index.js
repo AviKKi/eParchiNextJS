@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import QualityReportData from '../data/QualityReportData'
 import Column from './Column';
+import {Button} from 'antd';
 
 // Import React Table
 import ReactTable from "react-table";
@@ -19,6 +20,9 @@ const Table = (props) => {
 				defaultPageSize={data.length >= 10 ? 10 : data.length}
 				showPaginationBottom={false}
 			/>
+			<div style={{textAlign: 'right', padding: '1rem'}}>
+				<Button type="primary" icon="download" size='large' shape='circle' onClick={() => alert('Work is GoingOn :~)')}/>
+			</div>
 		</div>
 	);
 }

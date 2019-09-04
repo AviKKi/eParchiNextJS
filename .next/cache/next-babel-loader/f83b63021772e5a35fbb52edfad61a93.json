@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Dashboard from '../components';\nimport '../main.css';\nexport default (function () {\n  return __jsx(\"div\", {\n    className: \"App\"\n  }, __jsx(Dashboard, null));\n});","map":null,"metadata":{},"sourceType":"module"}

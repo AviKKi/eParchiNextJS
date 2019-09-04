@@ -652,45 +652,56 @@ class Modal extends react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/tabs/style/css */ "./node_modules/antd/lib/tabs/style/css.js");
-/* harmony import */ var antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/tabs */ "antd/lib/tabs");
-/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _data_QualityReportData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data/QualityReportData */ "./components/data/QualityReportData.js");
-/* harmony import */ var _QualityReportTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./QualityReportTable */ "./components/QualityReportTable/index.js");
+/* harmony import */ var antd_lib_date_picker_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/date-picker/style/css */ "./node_modules/antd/lib/date-picker/style/css.js");
+/* harmony import */ var antd_lib_date_picker_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_date_picker_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_date_picker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/date-picker */ "antd/lib/date-picker");
+/* harmony import */ var antd_lib_date_picker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_date_picker__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd/lib/tabs/style/css */ "./node_modules/antd/lib/tabs/style/css.js");
+/* harmony import */ var antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/tabs */ "antd/lib/tabs");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _data_QualityReportData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data/QualityReportData */ "./components/data/QualityReportData.js");
+/* harmony import */ var _QualityReportTable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./QualityReportTable */ "./components/QualityReportTable/index.js");
+
+
 
 
 var _jsxFileName = "/home/eswaraiah/Desktop/Books/eParchi/Dashboard/components/QualityReport.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 
 const {
   TabPane
-} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_1___default.a;
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_3___default.a;
 
 const callback = key => {// console.log(key);
 };
 
+function onPanelChange() {
+  console.log(123);
+}
+
 const QualityReport = () => {
   let furnaceNo = [];
-  _data_QualityReportData__WEBPACK_IMPORTED_MODULE_3__["default"].forEach(it => {
+  _data_QualityReportData__WEBPACK_IMPORTED_MODULE_5__["default"].forEach(it => {
     if (it.parent_heat.furnace_no) furnaceNo.push(it.parent_heat.furnace_no);
   });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_4__["Fragment"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 23
     },
     __self: undefined
-  }, __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_3___default.a, {
     defaultActiveKey: "1",
     onChange: callback,
+    className: "col 8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 24
     },
     __self: undefined
   }, furnaceNo.map((it, i) => {
@@ -699,18 +710,25 @@ const QualityReport = () => {
       key: it,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 26
       },
       __self: undefined
-    }, __jsx(_QualityReportTable__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, __jsx(_QualityReportTable__WEBPACK_IMPORTED_MODULE_6__["default"], {
       furnaceNo: it,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 27
       },
       __self: undefined
     }));
-  })));
+  })), __jsx(antd_lib_date_picker__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    onChange: onPanelChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (QualityReport);
@@ -786,43 +804,70 @@ const column = [{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _data_QualityReportData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/QualityReportData */ "./components/data/QualityReportData.js");
-/* harmony import */ var _Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Column */ "./components/QualityReportTable/Column.js");
-/* harmony import */ var react_table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-table */ "react-table");
-/* harmony import */ var react_table__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_table__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_table_react_table_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-table/react-table.css */ "./node_modules/react-table/react-table.css");
-/* harmony import */ var react_table_react_table_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_table_react_table_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/button/style/css */ "./node_modules/antd/lib/button/style/css.js");
+/* harmony import */ var antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/button */ "antd/lib/button");
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _data_QualityReportData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data/QualityReportData */ "./components/data/QualityReportData.js");
+/* harmony import */ var _Column__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Column */ "./components/QualityReportTable/Column.js");
+/* harmony import */ var react_table__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-table */ "react-table");
+/* harmony import */ var react_table__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_table__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_table_react_table_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-table/react-table.css */ "./node_modules/react-table/react-table.css");
+/* harmony import */ var react_table_react_table_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_table_react_table_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
 var _jsxFileName = "/home/eswaraiah/Desktop/Books/eParchi/Dashboard/components/QualityReportTable/index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
- // Import React Table
 
+// Import React Table
 
 
 
 const Table = props => {
-  let data = _data_QualityReportData__WEBPACK_IMPORTED_MODULE_1__["default"].filter(it => it.parent_heat.furnace_no === props.furnaceNo);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {}, [data]);
+  let data = _data_QualityReportData__WEBPACK_IMPORTED_MODULE_3__["default"].filter(it => it.parent_heat.furnace_no === props.furnaceNo);
+  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => {}, [data]);
   return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx(react_table__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    columns: _Column__WEBPACK_IMPORTED_MODULE_2__["default"],
-    data: data,
-    defaultPageSize: data.length >= 10 ? 10 : data.length,
-    showPaginationBottom: false,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: undefined
-  }));
+  }, __jsx(react_table__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    columns: _Column__WEBPACK_IMPORTED_MODULE_4__["default"],
+    data: data,
+    defaultPageSize: data.length >= 10 ? 10 : data.length,
+    showPaginationBottom: false,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), __jsx("div", {
+    style: {
+      textAlign: 'right',
+      padding: '1rem'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    type: "primary",
+    icon: "download",
+    size: "large",
+    shape: "circle",
+    onClick: () => alert('Work is GoingOn :~)'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: undefined
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Table);
@@ -1389,6 +1434,17 @@ function _extends() {
 
 /***/ }),
 
+/***/ "./node_modules/antd/lib/button/style/css.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/lib/button/style/css.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/antd/lib/card/style/css.js":
 /*!*************************************************!*\
   !*** ./node_modules/antd/lib/card/style/css.js ***!
@@ -1404,6 +1460,17 @@ function _extends() {
 /*!************************************************!*\
   !*** ./node_modules/antd/lib/col/style/css.js ***!
   \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/date-picker/style/css.js":
+/*!********************************************************!*\
+  !*** ./node_modules/antd/lib/date-picker/style/css.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1514,6 +1581,17 @@ module.exports = __webpack_require__(/*! /home/eswaraiah/Desktop/Books/eParchi/D
 
 /***/ }),
 
+/***/ "antd/lib/button":
+/*!**********************************!*\
+  !*** external "antd/lib/button" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/button");
+
+/***/ }),
+
 /***/ "antd/lib/card":
 /*!********************************!*\
   !*** external "antd/lib/card" ***!
@@ -1533,6 +1611,17 @@ module.exports = require("antd/lib/card");
 /***/ (function(module, exports) {
 
 module.exports = require("antd/lib/col");
+
+/***/ }),
+
+/***/ "antd/lib/date-picker":
+/*!***************************************!*\
+  !*** external "antd/lib/date-picker" ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/date-picker");
 
 /***/ }),
 
