@@ -1,1 +1,1 @@
-NextJS, ReactJS, AntD :~)
+NextJS, ReactJS, AntD :-P.
